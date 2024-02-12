@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .user-details {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="user-details">
+        <h1>Email of the user who is logged in is: <%= user.email %></h1>
+        <h2>Password is: <%= user.password %></h2>
+    </div>
+    <h2 style="display: flex;justify-content: center;">Other Users:</h2>
+    <% users.forEach(u => { %>
+        <div class="user-details" >
+            <% if (u.email !== user.email) { %>
+                <h1>Username: <%= u.name %></h1>
+                <h1>Email: <%= u.email %></h1>
+                <h2>Password: <%= u.password %></h2>
+            <% } %>
+        </div>
+    <% }) %>
+</body>
+
+</html>

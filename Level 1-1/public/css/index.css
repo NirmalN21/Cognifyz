@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    justify-content: center;
+    margin: 10rem auto;
+}
+
+form{
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 8px;
+}

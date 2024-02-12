@@ -1,0 +1,65 @@
+/* CreatePoll.css */
+.createPoll-container {
+    max-width: 500px;
+    margin: 5rem auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.createPoll-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.createPoll-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.createPoll-container label {
+    margin-bottom: 10px;
+}
+
+.createPoll-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.createPoll-container .submit-button, .add-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.createPoll-container .submit-button:hover, .add-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Style for removing options */
+.remove-button {
+    background-color: #f44336;
+    margin-left: 10px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f;
+}
+
+.add-button{
+    background-color: #4caf50;
+}

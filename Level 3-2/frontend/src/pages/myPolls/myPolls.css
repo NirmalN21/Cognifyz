@@ -1,0 +1,119 @@
+/* Timeline container */
+.myPolls {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.timeline-type{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.myPolls a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tactive{
+    color: #4fad52!important;
+}
+
+/* Timeline item */
+.myPolls-item {
+    list-style: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Poll question styling */
+.myPolls-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.myPolls label{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    border: 1px solid rgb(0, 0, 0);
+    width: 5rem;
+    height: 1.5rem;
+} 
+.myPolls .options{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    margin-left: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    width: 5rem;
+    height: 1.5rem;
+} 
+
+.myPolls span {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 1rem;
+}
+.myPolls .optionPercent {
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+/* Poll options styling */
+.myPolls-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.myPolls-item li {
+    margin-bottom: 4px;
+    color: #555;
+}
+
+/* Add some hover effect for better interactivity */
+.myPolls-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Add transition for a smooth effect */
+.myPolls-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+/* Timeline.css */
+
+/* Additional styling for poll options */
+.myPolls-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.myPolls-item li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.poll-details:last-of-type{
+    display: inline;
+}
+
+.delete-button{
+    margin-left: 15rem;
+}

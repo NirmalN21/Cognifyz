@@ -1,0 +1,21 @@
+.body {
+  height: 100vh;
+  background: linear-gradient(to right, #e1ecf4 0%, #aff5e5 25%, #e1ecf4 50%, #aff5e5 75%, #e1ecf4 100%);
+  /* You can adjust the colors and direction as needed */
+  
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+
+.heading {
+  text-align: center;
+  padding-top: 300px;
+  color: black;
+  font-weight: 500;
+  color: rgb(58, 58, 181);
+}
+
+@media (max-width:1000px) {
+  .body{margin: 0;}
+}
